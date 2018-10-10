@@ -18,6 +18,31 @@
           <i class="fa fa-graduation-cap"></i> Education
         </h2>
         <section class="blocks">
+            <div class="date">
+              <span>2018</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details">
+              <header>
+                <h3>Full Stack Webdeveloper</h3>
+                <span class="place">Codaisseur Academy</span>
+                <span class="location">Amsterdam, Netherlands</span>
+              </header>
+              <div class="">
+                <span>The Academy teaches you how to become a full stack web developer using languages, tools and design patterns most companies of today use.</span>
+                <ul> 
+                  <li>HTML, CSS, Javascript</li>
+                  <li>Node / TypeScript</li>
+                  <li>React, Redux</li>
+                  <li>Databases (PostgreSql, Firebase, GraphQL)</li>
+                  <li>Tools such as Git, Docker</li>
+                  <li>UX design</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        <section class="blocks">
           <div class="date">
             <span>2018</span>
           </div>
@@ -386,14 +411,17 @@
             </td>
           </tr>          
         </table>
-      </div>      
-      <div class="side-block" id="skills">
-        <h1>
+      </div>     
+      <script>
+          function mouseOver(text){document.getElementById('language').innerText = text} 
+          function mouseOut(){document.getElementById('language').innerText = "Programming"}
+      </script>
+      <div class="side-block" id="skills" onmouseout="mouseOut()">
+        <h1 id="language">
           Programming
         </h1>
         <table>
-          <tr>
-            <!-- html -->
+          <tr onmouseover='mouseOver("html")'>
             <td><i class="fab fa-html5"></i></td>
             <td>
               <i class="fa fa-star"></i>
@@ -403,8 +431,7 @@
               <i class="far fa-star"></i>
             </td>
           </tr>
-          <tr>
-            <!-- css -->
+          <tr onmouseover='mouseOver("CSS")'>
             <td><i class="fab fa-css3-alt"></i></td>
             <td>
               <i class="fa fa-star"></i>
@@ -414,8 +441,7 @@
               <i class="far fa-star"></i>
             </td>
           </tr>
-          <tr>
-            <!-- js -->
+          <tr onmouseover='mouseOver("Javascript")'>
             <td><i class="fab fa-js"></i></td>
             <td>
               <i class="fa fa-star"></i>
@@ -425,19 +451,27 @@
               <i class="fa fa-star"></i>
             </td>
           </tr>
-          <tr>
-              <!-- nodejs -->
-              <td><i class="fab fa-node-js"></i></td>
+          <tr onmouseover='mouseOver("NodeJS")'>
+            <td><i class="fab fa-node-js"></i></td>
+            <td>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </td>
+          </tr>  
+          <tr onmouseover='mouseOver("React")'>
+              <td><i class="fab fa-react"></i></td>
               <td>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
               </td>
             </tr>          
-          <tr>
-            <!-- php -->
+          <tr onmouseover='mouseOver("PHP")'>
             <td><i class="fab fa-php"></i></td>
             <td>
               <i class="fa fa-star"></i>
@@ -447,8 +481,7 @@
               <i class="fa fa-star"></i>
             </td>
           </tr>
-          <tr>
-            <!-- python -->
+          <tr onmouseover='mouseOver("Python")'>
             <td><i class="fab fa-python"></i></td>
             <td>
               <i class="fa fa-star"></i>
@@ -458,8 +491,7 @@
               <i class="far fa-star"></i>
             </td>
           </tr> 
-          <tr>
-            <!-- java -->
+          <tr onmouseover='mouseOver("Java")'>
             <td><i class="fab fa-java"></i></td>
             <td>
               <i class="fa fa-star"></i>
@@ -469,8 +501,7 @@
               <i class="far fa-star"></i>
             </td>
           </tr>
-          <tr>
-            <!-- db -->
+          <tr onmouseover='mouseOver("Databases")'>
             <td><i class="fa fa-database"></i></td>
             <td>
               <i class="fa fa-star"></i>
