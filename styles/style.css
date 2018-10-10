@@ -347,9 +347,15 @@ li{
 }
 
 #skills ul{
-  margin: 0.05in 0 0.15in;
+  margin: 0.10in 0 0.15in;
   padding: 0;
 }
+
+#skills tr > td:first-child{
+
+}
+
+
 
 #disclaimer{
   position: absolute;
