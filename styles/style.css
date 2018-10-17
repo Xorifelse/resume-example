@@ -18,10 +18,10 @@
 
   /* XXX: using px for very good precision control */
   --decorator-outer-offset-top: 10px;
-  --decorator-outer-offset-left: -5.5px;
+  --decorator-outer-offset-left: -5.2px;
   --decorator-border-width: 1px;
   --decorator-outer-dim: 9px;
-  --decorator-border: 1px solid #ccc;
+  --decorator-border: 1px solid #aaa;
 
   --row-blocks-padding-top: 5pt;
   --date-block-width: 0.6in;
@@ -217,10 +217,10 @@ li{
   left: calc(var(--decorator-outer-offset-left) + var(--decorator-border-width));
   content: ' ';
   display: block;
-  width: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
+  /*width: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
   height: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
   border-radius: calc((var(--decorator-outer-dim) - (var(--decorator-border-width) * 2)) / 2);
-  background-color: #555;
+  background-color: #555;*/
 }
 
 .blocks:last-child .decorator{ /* slightly shortens it */
