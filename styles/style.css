@@ -351,8 +351,10 @@ li{
   padding: 0;
 }
 
-#skills tr > td:first-child{
-
+.skill{
+margin: 0;
+padding: 0;
+font-size: 15px;
 }
 
 
